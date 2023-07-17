@@ -1,0 +1,147 @@
+:root{
+    --primary:#b8c8ae;
+    --dark:#85917d;
+    --shadow: 0 1px 5px rgba(43, 43, 43, 0.8);
+    --blackshadow: 2px 2px 2px black;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--primary);
+}
+header{
+background-image: url(img/lakeheader.png);
+width: 100%;
+height: 300px;
+background-size:cover ;
+text-align: center;
+box-shadow: var(--shadow);
+}
+header h1{
+    position: relative;
+    top: 100px;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px rgb(47, 47, 47);
+}
+.main-nav ul{
+    display: grid;
+    grid-gap: 20px;
+    list-style: none;
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+}
+.main-nav a{
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+.preview{
+    display: grid;
+    grid-template-areas: 
+    'showcase showcase top1'
+    'showcase showcase top2';
+    grid-gap: 20px;
+}
+.btn{
+    background: var(--dark);
+    color: var(--light);
+    padding: 10px;
+    text-decoration: none;
+    border: 0;
+}
+.top-box-a{
+    grid-area: showcase;
+    text-align: center;
+    background-image: url(img/fisherman.jpg);
+    background-size: cover;
+    min-height: 400px;
+    text-shadow: 2px 2px 2px black;
+}
+.top-box-b h1, .top-box-c h1{
+    text-shadow: 2px 2px 2px black;
+    background: var(--dark);
+}
+.top-box{
+    padding: 10px;
+    box-shadow: var(--shadow);
+}
+.top-box h1{
+    background-color: var(--dark);
+    font-size: 2rem;
+    color: white;
+}
+.info{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.info-box-a{
+    background-image: url(img/tangle.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.info-box-a p{
+    background-color: rgb(255, 255, 255, .8);
+    padding: 10px;
+    font-size: 20px;
+}
+
+.info-box{
+    box-shadow: var(--shadow);
+    padding: 10px;
+}
+.info-box h1{
+    color: white;
+    background-color: var(--dark);
+}
+.info-box-c p{
+    font-size: 20px;
+}
+.info-box-b img{
+    width: 200px;
+}
+.info-box-b p{
+    font-size: 20px;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    'showcase showcase top1'
+    'showcase showcase top2';
+    grid-gap: 20px;
+}
+.container h1{
+    background-color: var(--dark);
+}
+.shop{
+    box-shadow: var(--shadow);
+    grid-area: showcase;
+    text-align: center;
+}
+.instore{
+    grid-area: top1;
+    box-shadow: var(--shadow);
+    padding: 10px;
+    text-align: center;
+}
+.instore img{
+    max-width: 300px;
+}
+.tutorial{
+    grid-area: top2;
+    box-shadow: var(--shadow);
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
