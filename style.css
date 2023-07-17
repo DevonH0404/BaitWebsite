@@ -140,7 +140,47 @@ header h1{
     text-align: center;
     padding: 10px;
 }
-
+@media (max-width:850px)
+{
+    .container{
+        grid-template-areas:
+        'showcase'
+        'top1'
+        'top2' ;
+        width: 300px;
+        margin: auto;
+    }
+    .tutorial iframe{
+        width: 100%;
+    }
+    .main-nav ul{
+        grid-template-columns:1fr;
+    }
+    .preview{
+        grid-template-areas: 
+        'showcase showcase'
+        'top1 top2';
+    }
+    .top-box b, .top-box-c{
+        height: 250px;
+    }
+    .top-box-b .btn,.top-box-c .btn{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .info{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:500px){
+    .preview{
+        grid-template-areas: 
+        'showcase'
+        'top1'
+        'top2';
+    }
+}
 
 
 
